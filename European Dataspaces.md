@@ -17,24 +17,6 @@ Binnen sectoren en thema's zijn er vaak meer al geldende afspraken t.a.v. standa
 
 ![eudataspacesill.png](media/eudataspacesill.png)
 
-Op Europees niveau worden de volgende thema's genoemd als sectorale dataspaces, waarop ook acties zijn ingezet:
-
-* Gezondheid
-* Mobiliteit
-* Industrie
-* Financiële diensten
-* Energie
-* Landbouw
-* Green Deal
-* Overheid
-* Vaardigheden (onderwijs en arbeidsmarkt)
-* Wetenschap
-- Cultureel erfgoed
-- Toerisme
-- Media
-- Taal
-
-Verder worden ook circulaire economie en smart communities als mogelijk thema voor een Europese sectorale data space genoemd.
 
 Ook wordt gesproken over de 'persoonlijke data space', die het mogelijk maakt om als individu of organisatie gegevens voor een specifiek gebruiksgeval (tijdelijk) in te brengen. (Een voorbeeld zou kunnen zijn, dat je je eigen mobiliteitsgegevens meeneemt naar een discussie over een nieuwe busroute of rondweg in je wijk). Vanuit een persoonlijke data space kan ook het in de [Data Governance Act (DGA)](#data-governance-act-dga) genoemde 'data-altruïsme' worden vormgegeven. Data-altruïsme is het beschikbaar stellen van gegevens voor algemeen nut aan een beherende erkende organisatie die toeziet op het juiste gebruik van die gegevens. 
 
