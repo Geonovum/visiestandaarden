@@ -1,20 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.1.1">
-<style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
+<meta name="generator" content="ReSpec 35.3.0">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -43,9 +30,8 @@ dfn{cursor:pointer}
   
   
 <script>document.title = respecConfig.title</script>
-<title>[TODO: Neem titel op in config.js]</title>
+<title>Visie standaarden</title>
   
-<title>TODO: Vul hier de titel in</title>
   
 <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico">
   
@@ -71,7 +57,7 @@ a.bibref{text-decoration:none}
 .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
-cite .bibref{font-style:normal}
+cite .bibref{font-style:italic}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 ol.tof,ul.tof{list-style:none outside none}
@@ -99,8 +85,9 @@ dd{margin-left:0}
 }
 </style>
 <style id="respec-nlgov">
-img.license{float:left;padding-right:5px}
+img.license{float:left;padding-right:5px;background:0 0}
 </style>
+<meta name="color-scheme" content="light">
 <style>
 ul.index{columns:30ch;column-gap:1.5em}
 ul.index li{list-style:inherit}
@@ -113,24 +100,6 @@ ul.index code{color:inherit}
 }
 </style>
 <meta name="description" content="TODO: vul in abstract.md een abstract in.">
-<style>
-.hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
-@media (prefers-color-scheme:dark){
-.hljs{--base:#282c34;--mono-1:#abb2bf;--mono-2:#818896;--mono-3:#5c6370;--hue-1:#56b6c2;--hue-2:#61aeee;--hue-3:#c678dd;--hue-4:#98c379;--hue-5:#e06c75;--hue-5-2:#be5046;--hue-6:#d19a66;--hue-6-2:#e6c07b}
-}
-.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;color:var(--mono-1,#383a42);background:#fafafa;background:var(--base,#fafafa)}
-.hljs-comment,.hljs-quote{color:#717277;color:var(--mono-3,#717277);font-style:italic}
-.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4;color:var(--hue-3,#a626a4)}
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;color:var(--hue-5,#ca4706);font-weight:700}
-.hljs-literal{color:#0b76c5;color:var(--hue-1,#0b76c5)}
-.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c;color:var(--hue-4,#42803c)}
-.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01;color:var(--hue-6-2,#9a6a01)}
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801;color:var(--hue-6,#986801)}
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3;color:var(--hue-2,#336ae3)}
-.hljs-emphasis{font-style:italic}
-.hljs-strong{font-weight:700}
-.hljs-link{text-decoration:underline}
-</style>
 <style>
 
   .sidelabel {
@@ -156,6 +125,7 @@ ul.index code{color:inherit}
 </style>
 <script id="initialUserConfig" type="application/json">{
   "nl_organisationName": "Geonovum",
+  "nl_organisationStylesURL": "https://tools.geostandaarden.nl/respec/style/",
   "nl_organisationPublishURL": "https://docs.geostandaarden.nl/",
   "logos": [
     {
@@ -246,7 +216,7 @@ ul.index code{color:inherit}
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "cv": "Dit is een consultatieversie.",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
@@ -255,7 +225,7 @@ ul.index code{color:inherit}
       "sotd": "Status of this document",
       "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
       "wv": "This is a working draft that can be changed, removed or replaced by other documents at any time. It is not a stable document.",
-      "cv": "This is a stable draft, published for public comment. Comments regarding this document may be sent to ",
+      "cv": "This is a stable draft, published for public comment.",
       "vv": "This is the final draft of this document. Edits resulting from consultations have been applied.",
       "basis": "This document has no official standing.",
       "ld": "This is a living document, which is updated regularly."
@@ -296,30 +266,1086 @@ ul.index code{color:inherit}
       "authors": [
         "T. Preston-Werner"
       ],
-      "date": "June 2013",
-      "id": "semver"
+      "date": "June 2013"
+    },
+    "MIM12": {
+      "id": "MIM12",
+      "title": "MIM - Metamodel Informatie Modellering (Versie 1.2)",
+      "href": "https://docs.geostandaarden.nl/mim/def-st-mim-20240613/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2024-06-13"
+    },
+    "3DTILES": {
+      "title": "3D Tiles Specification 1.0",
+      "href": "http://docs.opengeospatial.org/cs/18-053r2/18-053r2.html",
+      "status": "Approved for public release",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Patrick Cozzi",
+        "Sean Lilley",
+        "Gabby Getz"
+      ],
+      "date": "2019-01-31",
+      "id": "3DTILES"
+    },
+    "adr-mod-geo": {
+      "title": "API Design rules Module: Geospatial",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie-mod-geo/",
+      "status": "Consultatieversie",
+      "publisher": "Geonovum",
+      "editors": [
+        "Linda van den Brink"
+      ],
+      "authors": [
+        "Pieter Bresters",
+        "Linda van den Brink",
+        "Paul van Genuchten",
+        "George Mathijssen",
+        "Mark Strijker"
+      ],
+      "date": "2022-09-30",
+      "id": "adr-mod-geo"
+    },
+    "CIS10": {
+      "title": "ISO 19123-2:2018 Geographic information — Schema for coverage geometry and functions — Part 2: Coverage implementation schema",
+      "href": "https://www.iso.org/standard/70948.html",
+      "status": "Published",
+      "publisher": "ISD",
+      "date": "2018-10-01",
+      "id": "CIS10"
+    },
+    "CityGML2": {
+      "title": "OGC City Geography Markup Language (CityGML) Encoding Standard",
+      "href": "https://portal.ogc.org/files/?artifact_id=47842",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Gerhard Gröger",
+        "Thomas H. Kolbe",
+        "Claus Nagel",
+        "Karl-Heinz Häfele"
+      ],
+      "date": "2012-04-04",
+      "id": "CityGML2"
+    },
+    "CityGML3": {
+      "title": "OGC City Geography Markup Language (CityGML) Part 1: Conceptual Model Standard v3.0",
+      "href": "https://docs.ogc.org/is/20-010/20-010.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Thomas H. Kolbe",
+        "Tatjana Kutzner",
+        "Carl Stephen Smyth",
+        "Claus Nagel",
+        "Carsten Roensdorf",
+        "Charles Heazel"
+      ],
+      "date": "2021-09-13",
+      "id": "CityGML3"
+    },
+    "CityJSON": {
+      "title": "CityJSON Community Standard 1.0",
+      "href": "https://docs.ogc.org/cs/20-072r2/20-072r2.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Hugo Ledoux"
+      ],
+      "date": "2021-08-13",
+      "id": "CityJSON"
+    },
+    "COVJSON": {
+      "title": "OGC CoverageJSON Community Standard 1.0-draft_0.2.2",
+      "href": "https://portal.ogc.org/files/102051",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Chris Little",
+        "Jon Blower",
+        "Maik Riechert"
+      ],
+      "id": "COVJSON"
+    },
+    "CSW2APISO": {
+      "title": "OpenGIS Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile",
+      "href": "http://portal.opengeospatial.org/files/?artifact_id=21460",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "Open Geospatial Consortium",
+      "id": "CSW2APISO"
+    },
+    "CSWISOAP": {
+      "title": "OGC 07-045r2: OGC Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile: Corrigendum, version 1.0.2",
+      "href": "https://portal.ogc.org/files/80534",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Uwe Voges",
+        "Kristian Senkler"
+      ],
+      "date": "2020-11-19",
+      "id": "CSWISOAP"
+    },
+    "DCAT-AP-2.1.1": {
+      "title": "DCAT Application Profile for data portals in Europe 2.1.1",
+      "href": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/releases",
+      "publisher": "European Commission",
+      "date": "2022-06-24",
+      "id": "DCAT-AP-2.1.1"
+    },
+    "epsg": {
+      "title": "EPSG Geodetic Parameter Dataset",
+      "href": "https://epsg.org/home.html",
+      "status": "Published",
+      "publisher": "Geodesy Subcommittee of the IOGP Geomatics Committee",
+      "id": "epsg"
+    },
+    "FE20": {
+      "title": "OGC 09-026r2: OGC Filter Encoding 2.0 Encoding Standard - With Corrigendum, Version 2.0.3",
+      "href": "http://docs.opengeospatial.org/is/09-026r2/09-026r2.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Panagiotis (Peter) A. Vretanos",
+      "date": "2014-08-18",
+      "id": "FE20"
+    },
+    "GeoPackage": {
+      "title": "OGC GeoPackage Encoding Standard - with Corrigendum, v1.3.1",
+      "href": "https://www.geopackage.org/spec131/",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Jeff Yutzler"
+      ],
+      "date": "2021-11-16",
+      "id": "GeoPackage"
+    },
+    "GEOSPARQL11": {
+      "title": "OGC GeoSPARQL - A Geographic Query Language for RDF Data",
+      "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Nicholas J. Car",
+        "Timo Homburg",
+        "Matthew Perry",
+        "John Herring",
+        "Frans Knibbe",
+        "Simon J.D. Cox",
+        "Joseph Abhayaratna",
+        "Mathias Bonduel"
+      ],
+      "date": "2022",
+      "id": "GEOSPARQL11"
+    },
+    "GeoTIFF": {
+      "title": "OGC GeoTIFF standard v1.1",
+      "href": "http://docs.opengeospatial.org/is/19-008r4/19-008r4.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Emmanuel Devys",
+        "Ted Habermann",
+        "Chuck Heazel",
+        "Roger Lott",
+        "Even Rouault"
+      ],
+      "date": "2019-09-14",
+      "id": "GeoTIFF"
+    },
+    "GIMEG": {
+      "href": "https://docs.geostandaarden.nl/nen3610/gimeg",
+      "publisher": "Geonovum",
+      "status": "Vastgesteld",
+      "authors": [
+        "Linda van den Brink",
+        "Paul Janssen",
+        "Wilko Quak"
+      ],
+      "title": "Geometrie in model en GML",
+      "date": "2021-03-26",
+      "id": "GIMEG"
+    },
+    "GML31": {
+      "title": "OpenGIS® Geography Markup Language (GML) Implementation Specification, v3.1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=4700",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Simon Cox",
+        "Paul Daisey",
+        "Ron Lake",
+        "Clemens Portele",
+        "Arliss Whiteside"
+      ],
+      "date": "2004-02-07",
+      "id": "GML31"
+    },
+    "GML33": {
+      "title": "OGC® Geography Markup Language (GML) — Extended schemas and encoding rules, v3.3",
+      "href": "https://portal.ogc.org/files/?artifact_id=46568",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Clemens Portele"
+      ],
+      "date": "2012-02-07",
+      "id": "GML33"
+    },
+    "GMLJPEG2000": {
+      "title": "OGC® GML in JPEG 2000 (GMLJP2) Encoding Standard Part 1: Core v.2.1",
+      "href": "http://docs.opengeospatial.org/is/08-085r8/08-085r8.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Lucio Colaiacomo",
+        "Joan Masó",
+        "Emmanuel Devys",
+        "Eric Hirschorn"
+      ],
+      "date": "2018-08-27",
+      "id": "GMLJPEG2000"
+    },
+    "GMLSF": {
+      "title": "Geography Markup Language (GML) simple features profile (with Corrigendum) (2.0)",
+      "href": "https://portal.ogc.org/files/?artifact_id=42729",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Linda van den Brink",
+        "Clemens Portele",
+        "Panagiotis (Peter) A. Vretanos"
+      ],
+      "date": "2012-04-05",
+      "id": "GMLSF"
+    },
+    "HDF5": {
+      "title": "OGC Hierarchical Data Format Version 5 (HDF5®) Core Standard",
+      "href": "http://docs.opengeospatial.org/is/18-043r3/18-043r3.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Aleksandar Jelenak",
+        "Ted Habermann",
+        "Gerd Heber"
+      ],
+      "date": "2019-03-27",
+      "id": "HDF5"
+    },
+    "HDFEOS": {
+      "title": "HDF-EOS5 Data Model, File Format and Library (v1.1)",
+      "href": "https://www.earthdata.nasa.gov/sites/default/files/imported/ESDS-RFC-008-v1.1.pdf",
+      "status": "Recommended",
+      "publisher": "NASA",
+      "editors": [
+        "Larry Klein",
+        "Abe Taaheri"
+      ],
+      "date": "2016-05-01",
+      "id": "HDFEOS"
+    },
+    "HRCRS": {
+      "title": "Handreiking Gebruik coördinaatreferentiesystemen bij uitwisseling en visualisatie van geo-informatie",
+      "href": "https://docs.geostandaarden.nl/crs/crs/",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "editors": [
+        "Friso Penninga",
+        "Lennard Huisman"
+      ],
+      "date": "2022-03-14",
+      "id": "HRCRS"
+    },
+    "HRLFG": {
+      "title": "Geometrie in uitwisselingsformaten",
+      "href": "https://docs.geostandaarden.nl/g4w/geox/#inleiding",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "editors": [
+        "Linda van den Brink",
+        "Gabriella Wiersma"
+      ],
+      "date": "2022-02-04",
+      "id": "HRLFG"
+    },
+    "HRTOEG": {
+      "title": "Handreiking digitaal toegankelijk locatiedata",
+      "href": "https://docs.geostandaarden.nl/visu/toeg/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Edward Mac Gillavry",
+        "Sjors Slaats",
+        "Theo OVerduin",
+        "Thijs Brentjens",
+        "Victor Zuydweg"
+      ],
+      "date": "2021-08-02",
+      "id": "HRTOEG"
+    },
+    "HRWC": {
+      "title": "Handreiking webcartografie",
+      "href": "https://www.geonovum.nl/uploads/standards/downloads/handreiking%20webcartografie%201.0.1_0.pdf",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2010-11-18",
+      "id": "HRWC"
+    },
+    "I3S": {
+      "title": "OGC Indexed 3d Scene Layer (I3S) and Scene Layer Package (*.slpk) Format Community Standard Version 1.2",
+      "href": "http://docs.opengeospatial.org/cs/17-014r8/17-014r8.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Carl Reed",
+        "Tamrat Belayneh"
+      ],
+      "date": "2021-05-11",
+      "id": "I3S"
+    },
+    "IMMetingen": {
+      "title": "Informatiemodel Metingen",
+      "href": "https://www.sikb.nl/datastandaarden/richtlijnen/sikb0101",
+      "status": "Vastgesteld",
+      "publisher": "SIKB en IHW",
+      "id": "IMMetingen"
+    },
+    "INSGPGeopackage": {
+      "title": "GeoPackage encoding of INSPIRE datasets. INSPIRE good practise",
+      "href": "https://inspire.ec.europa.eu/good-practice/geopackage-encoding-inspire-datasets",
+      "status": "Candidate",
+      "publisher": "INSPIRE",
+      "id": "INSGPGeopackage"
+    },
+    "INSGPOAPIF": {
+      "title": "OGC API - Features as an INSPIRE download service",
+      "href": "https://inspire.ec.europa.eu/good-practice/ogc-api-%E2%80%93-features-inspire-download-service",
+      "status": "Endorsed Good Practice",
+      "publisher": "IOC TF",
+      "id": "INSGPOAPIF"
+    },
+    "INSGPSTA": {
+      "title": "OGC SensorThings API as an INSPIRE download service",
+      "href": "https://inspire.ec.europa.eu/good-practice/ogc-sensorthings-api-inspire-download-service",
+      "status": "Endorsed good practice",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "id": "INSGPSTA"
+    },
+    "inspire-19115-19119": {
+      "title": "INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119",
+      "href": "http://inspire.ec.europa.eu/documents/Metadata/INSPIRE_MD_IR_and_ISO_v1_2_20100616.pdf",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2007-10-26",
+      "id": "inspire-19115-19119"
+    },
+    "inspire-cirmd": {
+      "title": "Corrigendum to INSPIRE Metadata Regulation",
+      "href": "https://eur-lex.europa.eu/legal-content/NL/TXT/PDF/?uri=CELEX:32008R1205R(02)&from=EN",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2010-01-15",
+      "id": "inspire-cirmd"
+    },
+    "inspire-crs": {
+      "title": "INSPIRE Data Specification on Coordinate Reference Systems - Technical Guidelines",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/rs",
+      "status": "Published",
+      "publisher": "INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems",
+      "date": "2014-04-16",
+      "id": "inspire-crs"
+    },
+    "inspire-gcm": {
+      "title": "Generic Conceptual Model of the INSPIRE data specifications",
+      "href": "https://inspire.ec.europa.eu/documents/inspire-generic-conceptual-model",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2014-04-07",
+      "id": "inspire-gcm"
+    },
+    "inspire-gen": {
+      "title": "Guidelines for the encoding of spatial data",
+      "href": "https://inspire.ec.europa.eu/documents/guidelines-encoding-spatial-data",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2014-04-08",
+      "id": "inspire-gen"
+    },
+    "inspire-ggs": {
+      "title": "Guidelines INSPIRE Data Specification on Geographical Grid Systems - Technical Guidelines",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/gg",
+      "status": "Published",
+      "publisher": "INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems",
+      "date": "2014-04-16",
+      "id": "inspire-ggs"
+    },
+    "inspire-irmd": {
+      "title": "Implementing Rules for Metadata",
+      "href": "http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008R1205",
+      "authors": [
+        "Drafting Team Metadata and European Commission Joint Research Centre"
+      ],
+      "publisher": "European Commission Joint Research Centre",
+      "date": "2008-12-03",
+      "id": "inspire-irmd"
+    },
+    "inspire-mds": {
+      "title": "Methodology for the development of data specifications: baseline version (D 2.6, Version 3.0)",
+      "href": "https://inspire.ec.europa.eu/documents/methodology-development-data-specifications-baseline-version-d-26-version-30",
+      "status": "Published",
+      "publisher": "INSPIRE Drafting Team Data Specifications",
+      "date": "2008-04-06",
+      "id": "inspire-mds"
+    },
+    "inspire-TG-metadata": {
+      "title": "Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007",
+      "href": "https://github.com/INSPIRE-MIF/technical-guidelines/blob/2022.2/metadata/metadata-iso19139/metadata-iso19139.adoc",
+      "status": [
+        "Tehnical Guidance"
+      ],
+      "authors": [
+        "Temporary MIWP 2021-2024 sub-group 2.3.1"
+      ],
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2022-08-01",
+      "id": "inspire-TG-metadata"
+    },
+    "INSTGDiS": {
+      "title": "Technical Guidance for the implementation of Inspire Discovery Service, version 3.1",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-discovery-services-0",
+      "status": "Approved",
+      "publisher": "IOC TF",
+      "date": "2011-11-07",
+      "id": "INSTGDiS"
+    },
+    "INSTGDS": {
+      "title": "Technical Guidance for the implementation of Inspire Download Services",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-download-services",
+      "status": "Approved",
+      "publisher": "IOC TF",
+      "date": "2013-08-09",
+      "id": "INSTGDS"
+    },
+    "INSTGDSSOS": {
+      "title": "Technical Guidance for implementing download services using the OGC Sensor Observation Service and ISO 19143 Filter Encoding, version 1.0",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/download-sos",
+      "status": "Approved",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2016-12-16",
+      "id": "INSTGDSSOS"
+    },
+    "INSTGDSWCS": {
+      "title": "Technical Guidance for the implementation of Inspire Download Services using Web Coverage Services (WCS), version 1.0",
+      "href": "https://inspire.ec.europa.eu/id/document/tg/download-wcs",
+      "status": "Approved",
+      "publisher": "INSPIRE Maintenance and Implementation Group (MIG)",
+      "date": "2016-12-16",
+      "id": "INSTGDSWCS"
+    },
+    "INSTGVS": {
+      "title": "Technical Guidance for the implementation of Inspire View Service",
+      "href": "https://inspire.ec.europa.eu/documents/technical-guidance-implementation-inspire-view-services-1",
+      "status": "Definitief",
+      "publisher": "IOC TF",
+      "date": "2022-08-01",
+      "id": "INSTGVS"
+    },
+    "ISO15836": {
+      "title": "ISO 15836: 2004, Information and documentation - The Dublin Core metadata element set",
+      "href": "https://www.iso.org/standard/37629.htm",
+      "publisher": "International Organization for Standardization",
+      "date": "2004",
+      "id": "ISO15836"
+    },
+    "ISO19101": {
+      "title": "ISO 19101-1:2014 Geographic information — Reference model — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/59164.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2014-11-01",
+      "id": "ISO19101"
+    },
+    "ISO19103": {
+      "title": "ISO 19103:2015 Geographic information — Conceptual schema language",
+      "href": "https://www.iso.org/standard/56734.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2015-12-01",
+      "id": "ISO19103"
+    },
+    "ISO19107": {
+      "title": "ISO 19107:2019 Geographic information — Spatial schema",
+      "href": "https://www.iso.org/standard/66175.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-12-01",
+      "id": "ISO19107"
+    },
+    "ISO19108": {
+      "title": "ISO 19108:2002 Geographic information — Temporal schema",
+      "href": "https://www.iso.org/standard/26013.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2012-12-08",
+      "id": "ISO19108"
+    },
+    "ISO19109": {
+      "title": "ISO 19109:2015 Geographic information — Rules for application schema",
+      "href": "https://www.iso.org/standard/59193.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2015-12-01",
+      "id": "ISO19109"
+    },
+    "ISO19110": {
+      "title": "ISO 19110:2016 Geographic information — Methodology for feature cataloguing",
+      "href": "https://www.iso.org/standard/57303.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2016-12-01",
+      "id": "ISO19110"
+    },
+    "ISO19111": {
+      "title": "ISO 19111:2019 Geographic information — Referencing by coordinates",
+      "href": "https://www.iso.org/standard/74039.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-01-01",
+      "id": "ISO19111"
+    },
+    "ISO19115-2003": {
+      "title": "ISO 19115:2003  Geographic information -- Metadata",
+      "href": "https://www.iso.org/standard/26020.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2003-05-01",
+      "id": "ISO19115-2003"
+    },
+    "ISO19115-2006": {
+      "title": "ISO 19115:2003/Cor 1:2006 Geographic information — Metadata — Technical Corrigendum 1",
+      "href": "https://www.iso.org/standard/26020.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2006-06-01",
+      "id": "ISO19115-2006"
+    },
+    "ISO19115-2009": {
+      "title": "ISO 19115-2:2009 Geographic information — Metadata — Part 2: Extensions for imagery and gridded data",
+      "href": "https://www.iso.org/standard/39229.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2009-02-01",
+      "id": "ISO19115-2009"
+    },
+    "ISO19115-2014": {
+      "title": "ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/53798.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2014-04-01",
+      "id": "ISO19115-2014"
+    },
+    "ISO19117": {
+      "title": "ISO 19117:2012 Geographic Information - Portrayal",
+      "href": "https://www.iso.org/standard/46226.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2012-12-01",
+      "id": "ISO19117"
+    },
+    "ISO19118": {
+      "title": "ISO 19118:2011 Geographic information — Encoding",
+      "href": "https://www.iso.org/standard/44212.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2011-10-01",
+      "id": "ISO19118"
+    },
+    "ISO19119": {
+      "title": "Geographic information - Services",
+      "href": "https://www.iso.org/standard/39890.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2005-02-01",
+      "id": "ISO19119"
+    },
+    "ISO19119-2005": {
+      "title": "ISO 19119:2005 Geographic information — Services",
+      "href": "https://www.iso.org/standard/39890.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2005-02-01",
+      "id": "ISO19119-2005"
+    },
+    "ISO19119-2008": {
+      "title": "ISO 19119:2005/Amd 1:2008 Geographic information — Services — Amendment 1: Extensions of the service metadata model",
+      "href": "https://www.iso.org/standard/44268.html",
+      "publisher": "International Organization for Standardization",
+      "date": "2008-05-01",
+      "id": "ISO19119-2008"
+    },
+    "ISO19126-2009": {
+      "title": "ISO 19126:2009 Geographic information - Feature concept dictionaries and registers",
+      "href": "https://www.iso.org/standard/44875.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2009-11-01",
+      "id": "ISO19126-2009"
+    },
+    "ISO19131": {
+      "title": "ISO 19131:2022 Geographic information — Data product specifications",
+      "href": "https://www.iso.org/standard/85092.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2022-11-01",
+      "id": "ISO19131"
+    },
+    "ISO19136": {
+      "title": "ISO 19136-1:2020 Geographic information — Geography Markup Language (GML) — Part 1: Fundamentals",
+      "href": "https://www.iso.org/standard/75676.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2020-01-01",
+      "id": "ISO19136"
+    },
+    "ISO19139": {
+      "title": "ISO/TS 19139:2007 Geographic information - Metadata - XML schema implementation",
+      "href": "https://www.iso.org/standard/32557.html",
+      "status": [
+        "Adopted specification"
+      ],
+      "publisher": "International Organization for Standardization",
+      "date": "2007-04-01",
+      "id": "ISO19139"
+    },
+    "ISO6709": {
+      "title": "ISO 6709:2022 Standard representation of geographic point location by coordinates",
+      "href": "https://www.iso.org/standard/75147.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2022-09-01",
+      "id": "ISO6709"
+    },
+    "ISOJPEG2000": {
+      "title": "ISO/IEC 15444-1:2019 Information technology — JPEG 2000 image coding system — Part 1: Core coding system",
+      "href": "https://www.iso.org/standard/78321.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2019-10-01",
+      "id": "ISOJPEG2000"
+    },
+    "ISOts19127": {
+      "title": "ISO/TS 19127 Geographic Information - Geodetic codes and parameters",
+      "href": "https://www.iso.org/standard/41784.html",
+      "status": "Published",
+      "publisher": "ISO",
+      "date": "2005-06-01",
+      "id": "ISOts19127"
+    },
+    "JSON-FG": {
+      "title": "OGC Features and Geometries JSON - Part 1: Core",
+      "href": "https://docs.ogc.org/DRAFTS/21-045.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Clemens Portele",
+        "Panagiotis (Peter) A. Vretanos"
+      ],
+      "id": "JSON-FG"
+    },
+    "MBS": {
+      "title": "Mapbox GL JS Style Specification",
+      "href": "https://docs.mapbox.com/mapbox-gl-js/style-spec/",
+      "status": "Unofficial",
+      "publisher": "Mapbox",
+      "id": "MBS"
+    },
+    "MIM": {
+      "title": "MIM - Metamodel Informatie Modellering",
+      "href": "https://docs.geostandaarden.nl/mim/mim/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Dick Krijtenburg",
+        "Paul Janssen",
+        "Lennart van Bergen"
+      ],
+      "authors": [
+        "Lennart van Bergen",
+        "Thies Mesdag",
+        "Marco Brattinga",
+        "Paul Janssen",
+        "Pano Maria",
+        "Johan Boer"
+      ],
+      "date": "2022-02-17",
+      "id": "MIM"
+    },
+    "NEN3610": {
+      "title": "NEN 3610:2022 nl - BBasismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+      "href": "https://www.nen.nl/nen-3610-2022-nl-296137",
+      "status": "Definitief",
+      "publisher": "NEN",
+      "date": "2022-05-31",
+      "id": "NEN3610"
+    },
+    "NETCDF": {
+      "title": "OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0",
+      "href": "https://portal.ogc.org/files/?artifact_id=43732",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Ben Domenico"
+      ],
+      "date": "2011-04-05",
+      "id": "NETCDF"
+    },
+    "NLAPIS": {
+      "title": "API Strategie Algemeen (Nederlandse API Strategie I)",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "date": "2022-03-09",
+      "id": "NLAPIS"
+    },
+    "NLDP": {
+      "title": "NEN 3610 - Linked Data",
+      "href": "https://docs.geostandaarden.nl/nen3610/nldp/",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "editors": [
+        "Paul Janssen"
+      ],
+      "authors": [
+        "Linda van den Brink",
+        "Marco Brattinga",
+        "Marinus Vonhof",
+        "Niels Hoffmann",
+        "Pano Maria",
+        "Hans Schevers",
+        "Ronald van Lanen",
+        "Joep van Genuchten"
+      ],
+      "date": "2020-03-23",
+      "id": "NLDP"
+    },
+    "NLISO19115": {
+      "title": "Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0",
+      "href": "https://docs.geostandaarden.nl/md/mdprofiel-iso19115/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2020-06-30",
+      "id": "NLISO19115"
+    },
+    "NLISO19119": {
+      "title": "Nederlands metadata profiel op ISO 19119 voor services versie 2.1.0",
+      "href": "https://docs.geostandaarden.nl/md/mdprofiel-iso19119/",
+      "status": "Vastgestelde versie",
+      "publisher": "Geonovum",
+      "date": "2020-06-30",
+      "id": "NLISO19119"
+    },
+    "NLWFS": {
+      "title": "Nederlands profiel op ISO 19142 Geographic information — Web Feature Service, Versie 1.1",
+      "href": "https://www.geonovum.nl/geo-standaarden/services/nederlands-wfs-profiel-11-op-iso-19142-voor-web-feature-services-20",
+      "status": "Definitief",
+      "publisher": "Geonovum",
+      "date": "2015-04-24",
+      "id": "NLWFS"
+    },
+    "NLWMS": {
+      "title": "Nederlands profiel op ISO 19128 Geographic information — Web Map Server Interface",
+      "href": "https://www.geonovum.nl/uploads/documents/nederlands_profiel_op_iso_19128_wms_1.3_-_versie_1.0.pdf",
+      "status": "Vastgesteld",
+      "publisher": "Geonovum",
+      "date": "2015-04-24",
+      "id": "NLWMS"
+    },
+    "OaMt1": {
+      "title": "OGC Timeseries Profile of Observations and Measurements v1.0",
+      "href": "http://docs.opengeospatial.org/is/15-043r3/15-043r3.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "James Tomkins",
+        "Dominic Lowe"
+      ],
+      "id": "OaMt1"
+    },
+    "OaMx2": {
+      "title": "Observations and Measurements - XML Implementation v2.0",
+      "href": "https://portal.ogc.org/files/?artifact_id=41510",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Simon Cox"
+      ],
+      "id": "OaMx2"
+    },
+    "OAPIC": {
+      "title": "OGC 19-087: OGC API - Coverages - Part 1: Core, version 0.0.6",
+      "href": "http://docs.ogc.org/DRAFTS/19-087.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Charles Heazel",
+        "Jerome St-Louis"
+      ],
+      "id": "OAPIC"
+    },
+    "OAPIEDR": {
+      "title": "OGC 19-086r5: OGC API - Environmental Data Retrieval Standard, Version 1.0.1",
+      "href": "https://docs.ogc.org/is/19-086r5/19-086r5.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Mark Burgoyne",
+        "David Blodgett",
+        "Charles Heazel",
+        "Chris Little"
+      ],
+      "date": "2022-08-05",
+      "id": "OAPIEDR"
+    },
+    "OAPIF1": {
+      "title": "OGC 17-069r4: OGC API - Features - Part 1: Core corrigendum, Version 1.0.1",
+      "href": "https://docs.opengeospatial.org/is/17-069r4/17-069r4.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele",
+        "Charles Heazel"
+      ],
+      "date": "2022-05-11",
+      "id": "OAPIF1"
+    },
+    "OAPIF2": {
+      "title": "OGC 18-058: OGC API - Features - Part 2: Coordinate Reference Systems by Reference, Version 1.0",
+      "href": "https://docs.opengeospatial.org/is/18-058r1/18-058r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "date": "2020-11-02",
+      "id": "OAPIF2"
+    },
+    "OAPIF3": {
+      "title": "OGC 19-079r1: OGC API - Features - Part 3: Filtering, Version 1.0.0-rc1",
+      "href": "http://docs.ogc.org/DRAFTS/19-079r1.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "id": "OAPIF3"
+    },
+    "OAPIF4": {
+      "title": "OGC 20-002: OGC API - Features - Part 4: Create, Replace, Update and Delete, Version 1.0.0 snapshot (editor's draft",
+      "href": "http://docs.ogc.org/DRAFTS/20-002.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Clemens Portele"
+      ],
+      "id": "OAPIF4"
+    },
+    "OAPIMAPS": {
+      "title": "OGC 20-058: OGC API - Maps - Part 1: Core, Version 0.1.0",
+      "href": "http://docs.ogc.org/DRAFTS/20-058.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Joan Masó",
+      "date": "2022-06-06",
+      "id": "OAPIMAPS"
+    },
+    "OAPIRECORDS1": {
+      "title": "OGC 20-224: OGC API - Records - Part 1: Core",
+      "href": "http://docs.ogc.org/DRAFTS/20-004.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Panagiotis (Peter) A. Vretanos",
+        "Tom Kralidis",
+        "Charles Heazel"
+      ],
+      "date": "2020-01-13",
+      "id": "OAPIRECORDS1"
+    },
+    "OAPISTYLES": {
+      "title": "OGC 20-009: OGC API Styles",
+      "href": "http://docs.opengeospatial.org/DRAFTS/20-009.html",
+      "status": "Draft",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "C. Portele",
+      "id": "OAPISTYLES"
+    },
+    "OAPITILES1": {
+      "title": "OGC 20-057: OGC API - Tiles - Part 1: Core",
+      "href": "https://docs.ogc.org/is/20-057/20-057.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Joan Masó",
+        "Jérôme St-Louis"
+      ],
+      "date": "26-08-2022",
+      "id": "OAPITILES1"
+    },
+    "OMS3": {
+      "title": "OGC Abstract Specification Topic 20: Observations, measurements and samples v3.0.0",
+      "href": "https://docs.ogc.org/as/20-082r4/20-082r4.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Katharina Schleidt",
+        "Ilkka Rinne"
+      ],
+      "date": "2023-05-26",
+      "id": "OMS3"
+    },
+    "OREFCO": {
+      "title": "OGC Abstract Specification Topic 2: Referencing by coordinates",
+      "href": "http://docs.opengeospatial.org/as/18-005r4/18-005r4.html",
+      "status": "OGC® Publicly Available Standard",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Roger Lott"
+      ],
+      "date": "2019-02-08",
+      "id": "OREFCO"
+    },
+    "SE11": {
+      "title": "OGC 05-077r4: OpenGIS Symbology Encoding Implementation Specification, version 1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=16700",
+      "status": "Final version",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2006-07-21",
+      "id": "SE11"
+    },
+    "SensorML": {
+      "title": "OGC SensorML: Model and XML Encoding Standard v2.1",
+      "href": "http://docs.ogc.org/is/12-000r2/12-000r2.html",
+      "status": "Published",
+      "publisher": "Open Geospatial Consortium",
+      "editors": [
+        "Mike Botts",
+        "Alexandre Robin",
+        "Eric Hirschorn"
+      ],
+      "date": "2020-08-10",
+      "id": "SensorML"
+    },
+    "SLD11": {
+      "title": "OGC 05-078r4: Styled Layer Descriptor profile of the Web Map Service Implementation Specification, Version 1.1",
+      "href": "http://portal.opengeospatial.org/files/?artifact_id=22364",
+      "status": "Final version",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2007-06-29",
+      "id": "SLD11"
+    },
+    "STAS": {
+      "title": "OGC 18-088: OGC SensorThings API Part 1 - Sensing, Version 1.1",
+      "href": "https://docs.ogc.org/is/18-088/18-088.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Steve Liang",
+        "Tania Khalafbeigi",
+        "Hylke van der Schaaf"
+      ],
+      "date": "2021-08-04",
+      "id": "STAS"
+    },
+    "STAT": {
+      "title": "OGC 17-079r1: OGC SensorThings API Part 1 - Tasking Core, Version 1.0",
+      "href": "http://docs.opengeospatial.org/is/17-079r1/17-079r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": [
+        "Steve Liang",
+        "Tania Khalafbeigi"
+      ],
+      "date": "2019-01-08",
+      "id": "STAT"
+    },
+    "WCS21": {
+      "title": "OGC 17-089r1: OGC Web Coverage Service (WCS) 2.1 Interface Standard - Core",
+      "href": "http://docs.opengeospatial.org/is/17-089r1/17-089r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "date": "2018-08-16",
+      "id": "WCS21"
+    },
+    "WFS11": {
+      "title": "Web Feature Service Implementation Specification with Corrigendum, Version 1.1.3",
+      "href": "http://docs.opengeospatial.org/is/04-094r1/04-094r1.html",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "Panagiotis A. Vretanos",
+      "date": "2016-10-26",
+      "id": "WFS11"
+    },
+    "WMC11": {
+      "title": "OpenGIS 05-005: Web Map Context Documents Implementation Specification, version 1.1",
+      "href": "https://portal.ogc.org/files/?artifact_id=8618",
+      "status": "Adopted specification",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "J. Sonnet",
+      "date": "2005-01-19",
+      "id": "WMC11"
+    },
+    "WMCC11": {
+      "title": "OpenGIS 08-050: Corrigendum for OpenGIS Implementation Standard Web Map Context Documents - Corrigendum 1",
+      "href": "https://portal.ogc.org/files/?artifact_id=27286",
+      "status": "Approved",
+      "publisher": "Open Geospatial Consortium (OGC)",
+      "editors": "T. Kralidis",
+      "date": "2008-03-14",
+      "id": "WMCC11"
     }
   },
-  "title": "[TODO: Neem titel op in config.js]",
+  "title": "Visie standaarden",
   "specStatus": "wv",
-  "specType": "HR",
-  "pubDomain": "TODO",
-  "shortName": "NL-ReSpec-GN-template",
+  "specType": "AL",
+  "pubDomain": "ngii",
+  "shortName": "visiestandaarden",
   "editors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Ine de Visser",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
   "authors": [
     {
-      "name": "voornaam achternaam",
+      "name": "Ine de Visser",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Linda van den Brink",
+      "company": "Geonovum",
+      "companyURL": "https://www.geonovum.nl"
+    },
+    {
+      "name": "Paul Janssen",
       "company": "Geonovum",
       "companyURL": "https://www.geonovum.nl"
     }
   ],
-  "github": "https://github.com/Geonovum/NL-ReSpec-GN-template",
+  "github": "https://github.com/Geonovum/visiestandaarden",
   "alternateFormats": [
     {
       "label": "pdf",
@@ -327,21 +1353,21 @@ ul.index code{color:inherit}
     }
   ]
 }</script>
-<link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
+<link rel="stylesheet" href="https://tools.geostandaarden.nl/respec/style/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry informative toc-inline"><div class="head">
     <a class="logo" href="https://www.geonovum.nl/geo-standaarden"><img alt="Geonovum" height="67" id="Geonovum" src="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg" width="132">
-  </a> <h1 id="title" class="title">[TODO: Neem titel op in config.js]</h1>
+  </a> <h1 id="title" class="title">Visie standaarden</h1>
     
     <h2>
-      Geonovum Handreiking<br>
+      Geonovum Algemeen<br>
       Werkversie
-      <time class="dt-published" datetime="2024-09-26">26 september 2024</time>
+      <time class="dt-published" datetime="2025-07-24">24 juli 2025</time>
     </h2>
     <dl>
       
       
-      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/NL-ReSpec-GN-template/">https://geonovum.github.io/NL-ReSpec-GN-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://geonovum.github.io/visiestandaarden/">https://geonovum.github.io/visiestandaarden/</a></dd>
       
       
       
@@ -349,20 +1375,24 @@ ul.index code{color:inherit}
       
       <dt>Redacteur:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+    <span class="p-name fn">Ine de Visser</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       
-      <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">voornaam achternaam</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Ine de Visser</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Linda van den Brink</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Paul Janssen</span> (<a class="p-org org h-org" href="https://www.geonovum.nl">Geonovum</a>)
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/">GitHub Geonovum/NL-ReSpec-GN-template</a>
+    <a href="https://github.com/Geonovum/visiestandaarden/">GitHub Geonovum/visiestandaarden</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/issues/">Dien een melding in</a>
+    <a href="https://github.com/Geonovum/visiestandaarden/issues/">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Geonovum/visiestandaarden/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Geonovum/NL-ReSpec-GN-template/pulls/">Pull requests</a>
+    <a href="https://github.com/Geonovum/visiestandaarden/pulls/">Pull requests</a>
   </dd>
     </dl>
     
@@ -372,77 +1402,175 @@ ul.index code{color:inherit}
           <a rel="alternate" href="template.pdf">pdf</a>
         </p>
     <p class="copyright">
-          Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
-        </p>
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>TODO: vul in abstract.md een abstract in.</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">2.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#europese-data-strategie"><bdi class="secno">1. </bdi>Europese Data Strategie</a></li><li class="tocline"><a class="tocxref" href="#european-data-spaces-dataruimten"><bdi class="secno">2. </bdi>European Data Spaces (<em>Dataruimten</em>)</a></li><li class="tocline"><a class="tocxref" href="#samenhang-datastelsels"><bdi class="secno">3. </bdi>Samenhang datastelsels</a></li><li class="tocline"><a class="tocxref" href="#open-geospatial-consortium"><bdi class="secno">4. </bdi>Open Geospatial Consortium</a></li><li class="tocline"><a class="tocxref" href="#world-wide-web-consortium-w3c"><bdi class="secno">5. </bdi>World Wide Web Consortium (W3C)</a></li><li class="tocline"><a class="tocxref" href="#iso-tc211"><bdi class="secno">6. </bdi>ISO TC211</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visie-en-strategie"><bdi class="secno">6.1 </bdi>Visie en strategie.</a></li><li class="tocline"><a class="tocxref" href="#doel-van-geo-standaarden"><bdi class="secno">6.2 </bdi>Doel van geo-standaarden.</a></li><li class="tocline"><a class="tocxref" href="#schets-van-ontwikkeling-gebruik-en-rol-van-geo-informatie"><bdi class="secno">6.3 </bdi>Schets van ontwikkeling gebruik en rol van geo-informatie.</a></li><li class="tocline"><a class="tocxref" href="#iso-tc211-visie-op-geo-standaarden-en-eu-data-spaces"><bdi class="secno">6.4 </bdi>ISO/TC211 visie op geo-standaarden en EU Data Spaces.</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">7. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
 
   
-  <section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
-<p>Bijvoorbeeld een introductie is niet normatief.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div></section>
-  <section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
-<section id="definities"><div class="header-wrapper"><h3 id="x2-1-definities"><bdi class="secno">2.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 2.1"></a></div>
-<p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor <em>definitie</em> is betekenis of beschrijving.</p>
-</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-2-afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.2"></a></div>
-<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">5. </bdi>Lijst met figuren</a>.</p>
-<p>
-      </p><figure id="fig-onderschrift">
-        <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
-        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
-      </figure>
-    <p></p>
-</section><section id="referenties"><div class="header-wrapper"><h3 id="x2-3-referenties"><bdi class="secno">2.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.3"></a></div>
-<p>Referentie uit locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
-<p>We gebruiken een <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> om een woord te omschrijven.</p>
-</section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-4-optioneel"><bdi class="secno">2.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.4"></a></div>
-<p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
-<pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sotd"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span><span class="hljs-comment">&lt;!-- Wordt automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"informative"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch01.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch02.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- Hieronder optionele secties. Worden automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'conformance'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'tof'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"index"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
+  <section class="informative" id="europese-data-strategie"><div class="header-wrapper"><h2 id="x1-europese-data-strategie"><bdi class="secno">1. </bdi>Europese Data Strategie</h2><a class="self-link" href="#europese-data-strategie" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<p>De <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1593073685620&amp;uri=CELEX:52020DC0066" target="_blank">Europese Data Strategie </a>, begin 2020 voorgesteld, streeft naar een eenheidsmarkt voor de beschikbaarheid en het gebruik van data. De strategie is daarbij gericht op het wereldwijd concurrentievermogen van Europa en op datasoevereiniteit. Technisch wordt naar een pan-Europese dataspace (dataruimte) gestreefd om te zorgen dat er meer data beschikbaar komt voor socio-economisch gebruik, terwijl bedrijven en individuen die data genereren er wel zeggenschap over blijven houden. Die pan-Europese dataspace wordt opgebouwd met meerdere sectorale data spaces waarbinnen afspraken worden gemaakt over de omgang met data. Samen vormt dit de Europese binnenmarkt voor data (EU Single Market for Data). In de Commissieperiode 2024-2029 wordt dit verder versterkt en verdiept tot een Europese Data Unie.</p>
+<p>Binnen de Europese Data Strategie spelen drie juridische bouwstenen een rol:</p>
+<ul>
+<li>de Data Governance Act (DGA, Data governance verordening)</li>
+<li>de Data Act (DA, Data verordening)</li>
+<li>de Open Data Directive (ODD, Open Data Richtlijn) met daarin opgenomen de High Value Data lijst
+Verder wordt er geld beschikbaar gesteld om de benodigde infrastructuur, o.a. gefedereerde cloud-diensten te realiseren, en maatregelen getroffen om die cloud-diensten veilig, toegankelijk en competitief te houden.</li>
+</ul>
+<p>De Europese Data Strategie bevat veel elementen die rechtstreeks voor datahouders in publiek relevante domeinen van belang zijn.</p>
+<p>##De Data Governance act</p>
+<p>De Data Governance act regelt het hergebruik van overheidsdata die niet onder de Open Data Directive valt.  Daarvoor worden voorwaarden gesteld aan datadeeldiensten en daar wordt toezicht op uitgeoefend. Dit betreft overheidsgegevens waarop commerciële of statistische vertrouwelijkheid rust, persoonsgegevens die niet binnen de Open Data Richtlijn vallen, en gegevens waarvoor intellectueel eigendom van derden van toepassing is.
+Voorwaarden die veilig gebruik en eerlijke toegang regelen zijn van toepassing. Het is mogelijk om kosten in rekening te brengen voor hergebruik, maar daaraan zijn voorwaarden t.a.v. transparantie en uitlegbaarheid verbonden. Lidstaten dienen een of meer bevoegde organisaties aan te wijzen die de overheidsdatahouders ondersteunt t.a.v. techniek, verantwoord datagebruik, en het verwerken van aanvragen voor gebruik. Zie voor verdere uitleg <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#data-governance-act-dga" target="_blank">Data Governance Act </a></p>
+<p>De European Data Innovation Board (EDIB) adviseert over de werkwijzen in het kader van deze wet, standaarden, en interoperabiliteit (zie ook de Data Act), en let op de internationale samenwerking tussen nationaal aangewezen bevoegde organisaties. De EDIB is samengesteld uit vertegenwoordigers van de Lidstaten, een aantal andere (Europese) overheidsentiteiten en een groep experts. </p>
+<p>##Data Act</p>
+<p>De Data Act is bedoeld om meer data, in handen van bedrijven of gegenereerd door producten of diensten, onder eerlijke en uniforme regels beschikbaar te krijgen voor (her)gebruik. </p>
+<p>De Data Act geeft een reeks essentiële vereisten om interoperabiliteit mogelijk te maken tussen data spaces en data verwerkende diensten. Zo moeten data inhoud, structuur, licenties, verzamelmethode, kwaliteit en onzekerheden gedocumenteerd zijn, evenals data structuren, formaten, classificaties, API beschrijvingen etc. De EC kan verdere regels stellen t.a.v. interoperabiliteit, ook voor bepaalde sectoren. De EC kan standaarden vereisen, en (internationale) standaarden adopteren en verplicht stellen, niet alleen t.a.v. data maar ook bijvoorbeeld t.a.v. architectuur, technische standaarden en federatie van clouddiensten t.b.v. de Europese dataspace(s). De regels streven interoperabiliteit en portabiliteit na op zowel transport, syntactisch, semantisch, beleid en gedragsniveau. (Dit sluit aan op de Europese standaardisatiestrategie die niet alleen over digitale zaken gaat.)
+Zie voor verdere uitleg <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#data-act-da" target="_blank">Data Act</a></p>
+<p>##Open Data Directive</p>
+<p>De Open Data Directive formuleert hoe overheden open data beschikbaar moeten stellen (zowel na een aanvraag als bij pro-actieve publicatie). Beschikbaar te stellen data moet waar mogelijk digitaal in open en machine-leesbare formaten samen met hun metadata toegankelijk, vindbaar en herbruikbaar worden gemaakt. In voorkomende gevallen volstaan ook bestaande formaten (as-is). De Open Data Directive geeft de EC de mogelijkheid met een Uitvoeringsverordening open data verplichtingen op te leggen aan alle Lidstaten tegelijkertijd (dus zonder omzetting in nationale wetgeving). Zo'n uitvoeringsverordening vermeldt hoe en onder welke voorwaarden de verplichte open data moet worden gepubliceerd, en verstrekt. De EU High Value Data is zo'n uitvoeringsverordening. De uitvoeringsverordening bepaalt in haar bijlage (Annex I) welke overheidsdata verplicht als open data moet worden gepubliceerd. Voor die datasets bepaalt de wet de eisen die worden gesteld aan publicatie en gebruik van die datasets, waaronder de minimumvereisten aan ontsluiting via een API. Het staat landen vrij verder te gaan dan de implementatiewet voorschrijf, en t.a.v. de hoeveelheid data worden landen daartoe ook expliciet aangemoedigd. Unie of nationale wettelijke vereisten die verder gaan blijven onverminderd van kracht.
+Zie voor verdere uitleg <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#open-data-directive" target="_blank">Open data directive</a></p>
+<p>##Standaardisatie</p>
+<p>De Data Governance en Data verordeningen bevatten stukken die normalisatie vergen of expliciet om standaarden vragen.
+De EC heeft een concept standaardisatie verzoek neergelegd bij CEN-CENELEC m.b.t. data spaces, data governance  en cloud en edge. Dit is vooral een accent op de Data verordening maar ook de implementatie van de Data Governance verordening wordt met dit verzoek ondersteund. Verschillende elementen komen hierin samen / worden geadresseerd:</p>
+<ul>
+<li>Artikel 30, technische aspecten van het overstappen van dataplatform/intermediair</li>
+<li>Artikel 33, eisen inzake interoperabiliteit van gegevens, van mechanismen en diensten voor datadelen, en gemeenschappelijke Europese data spaces</li>
+<li>Artikel 35, interoperabiliteit voor dataverwerkingsdiensten</li>
+<li>Artikel 36, eisen m.b.t. slimme contracten voor het uitvoeren van gegevensdelingsovereenkomsten.</li>
+</ul>
+</section>
+  <section id="european-data-spaces-dataruimten"><div class="header-wrapper"><h2 id="x2-european-data-spaces-dataruimten"><bdi class="secno">2. </bdi>European Data Spaces (<em>Dataruimten</em>)</h2><a class="self-link" href="#european-data-spaces-dataruimten" aria-label="Permalink for Section 2."></a></div>
+<p>Er wordt een 'eenheidsmarkt voor data' gecreëerd, die vorm krijgt in de vorm van een EU-brede data space (<em>dataruimte</em>). De EU-brede data space is waar alle aspecten uit de hiervoor genoemde Verordeningen tot praktische uitdrukking komen. Het is niet een vraag of je als data-gebruikende of data-delende deel wilt nemen aan de EU dataspace. De EU-brede dataspace is de omgeving waarin je data-gebruik en -delen plaatsvindt, binnen de randvoorwaarden en afspraken die voor die marktomgeving gelden. Met de EU data space wordt het bestaande vrije verkeer van personen, goederen en kapitaal aangevuld met het vrije verkeer van data.</p>
+<p>Binnen zo'n data space moet het mogelijk zijn voor iedereen deel te nemen aan het delen, uitwisselen, en gebruiken van data. Ook als het gaat om data die je niet rechtstreeks kunt krijgen, worden er mogelijkheden voorzien om die data wel te kunnen gebruiken. Denk hier o.a. de overheidsdata die binnen de <a href="#data-governance-act-dga">Data Governance Act (DGA)</a> valt, maar niet onder de <a href="#open-data-directive">Open Data Directive</a> (en dus het openbaarheidsregime van de betreffende lidstaat). Zoals bijvoorbeeld het gebruiken van microdata van het CBS om een model te trainen zonder zelf over die microdata te hoeven beschikken, door het model naar de data te brengen.</p>
+<p>Wat een data space precies is en hoe het zal worden, krijgt middels een  geleidelijk ontstaansproces vorm, waarbij bestaande en nieuwe elementen worden gefedereerd en verbonden. Op basis van bestaande beschrijvingen is een dataspace opgebouwd uit:</p>
+<ul>
+<li>een technische infrastructuur die voor iedereen toegankelijk is en veilige uitwisseling en gebruik mogelijk maakt. Dit is voorzien als een gefedereerde cloud-omgeving (hier is een relatie met bijvoorbeeld Gaia-X [^1]). </li>
+<li>gereedschappen voor gebruik en delen</li>
+<li>generieke data governance afspraken en standaarden, waarin de Data Innovation Board uit de Data Governance Act (DGA) een rol speelt, en sectorale governance afspraken die gangbaar zijn binnen een toepassingsgebied</li>
+<li>heldere gebruikscondities (deels nader uitgewerkt in de komende <a href="#data-act-da">Data Act</a>)</li>
+</ul>
+<p>T.a.v. de generieke aspecten van een dataspace publiceren we de <a href="https://docs.geostandaarden.nl/eu/VerkenningDataspaces/">Verkenning dataspaces</a>.</p>
+<p>De manier waarop de EC de eenheidsmarkt voor data wil vormen, is middels sectorale data spaces, die vervolgens onderling interoperabel zijn. 
+Binnen sectoren en thema's zijn er vaak meer al geldende afspraken t.a.v. standaarden en professionele normen t.a.v. omgang met data, die telkens gebaseerd zijn op de context van die sector. Een data space bouwt daar dan op voort, zowel om dubbel werk te voorkomen als om de vorming van dataspaces te versnellen.</p>
+<p><img src="media/eudataspacesill.png" alt="eudataspacesill.png"></p>
+<p>Ook wordt gesproken over de 'persoonlijke data space', die het mogelijk maakt om als individu of organisatie gegevens voor een specifiek gebruiksgeval (tijdelijk) in te brengen. (Een voorbeeld zou kunnen zijn, dat je je eigen mobiliteitsgegevens meeneemt naar een discussie over een nieuwe busroute of rondweg in je wijk). Vanuit een persoonlijke data space kan ook het in de <a href="#data-governance-act-dga">Data Governance Act (DGA)</a> genoemde 'data-altruïsme' worden vormgegeven. Data-altruïsme is het beschikbaar stellen van gegevens voor algemeen nut aan een beherende erkende organisatie die toeziet op het juiste gebruik van die gegevens. </p>
+<p>Meer details  over de sectorale dataspaces zijn te vinden in het hoofdstuk <a href="#uitwerking-van-de-dataspaces">Uitwerking van de Dataspaces</a>. Voor generieke informatie over zichtbare algemene data space initiatieven zie ook de <a href="https://docs.geostandaarden.nl/eu/VerkenningDataspaces/">Verkenning dataspaces</a>.</p>
+<p>Open data, zoals de <a href="#high-value-data-lijst">High Value Data lijst</a> uit de Open Data Directive, en bronnen als <a href="#inspire-richtlijn">INSPIRE</a> voeden de data space.</p>
+<p>[^1]: <a href="https://www.gaia-x.eu/">GAIA-X</a> is een project om een efficiënte en concurrerende, veilige en betrouwbare data-infrastructuur voor de Europese Unie te ontwikkelen. Het is een Frans-Duits initiatief met een Europese dimensie, gesteund door 22 bedrijven. Het project werd officieel gelanceerd op 4 juni 2020.</p>
+</section>
+  <section id="samenhang-datastelsels"><div class="header-wrapper"><h2 id="x3-samenhang-datastelsels"><bdi class="secno">3. </bdi>Samenhang datastelsels</h2><a class="self-link" href="#samenhang-datastelsels" aria-label="Permalink for Section 3."></a></div>
+<p>[Samenhang datastelsels en standaarden.png](media/Samenhang datastelsels en standaarden.png)</p>
+</section>
+  <section id="open-geospatial-consortium"><div class="header-wrapper"><h2 id="x4-open-geospatial-consortium"><bdi class="secno">4. </bdi>Open Geospatial Consortium</h2><a class="self-link" href="#open-geospatial-consortium" aria-label="Permalink for Section 4."></a></div>
+<p>Het Open Geospatial Consortium (OGC) is een internationale non-profit organisatie die is opgericht om interoperabiliteit voor geografische gegevensverwerking te bevorderen, door ontwikkeling van open en uitbreidbare standaarden voor interfaces en data uitwisseling voor GIS en andere technologieën. Leden (ruim 400) van het OGC zijn zowel overheidsinstellingen als de industrie en onderwijsinstellingen. Het OGC ontwikkelt specificaties die bij voldoende volwassenheid worden aangeboden aan ISO/TC 211. OGC ontwikkelt deze specificaties door veelvuldig gebruik te maken van jaarlijkse grote testbeds. OGC ontwikkelt vooral technische implementatie standaarden gerelateerd aan services.</p>
+<p>Het OGC bestaat al meer dan 30 jaar en heeft belangrijke basisstandaarden geleverd voor de NGII en INSPIRE. </p>
+<p>Aan welke standaarden het OGC werkt, wordt bepaald door de leden, die dat doen op basis van hun behoeften. Het OGC zelf stuurt hier niet strategisch op maar faciliteert de leden. De huidige focus van OGC ligt vooral op</p>
+<ul>
+<li>Verdere ontwikkeling van de OGC API standaarden. De verwachting is dat het merendeel hiervan in de loop van 2025 klaar zal zijn;</li>
+<li>Cloud-native geostandaarden. Verschillende generieke cloud native bestandsformaten, die zijn ontworpen om zeer grote bestanden efficient en bruikbaar te kunnen publiceren, zijn of worden door OGC geadopteerd als OGC Community standard: Cloud Optimized GeoTIFF (COG) voor raster, GeoParquet voor vector, GeoZarr voor multidimensionele data. Vanuit Nederlandse OGC leden is aangegeven dat hier veel interesse voor is, maar tegelijk is er ook groeiende huiver om afhankelijk te worden van (Amerikaanse) cloud.</li>
+<li>AI, met name wat betreft metadata voor AI. OGC heeft al een standaard om de datasets waarmee AI getraind worden te metadateren, en gaat nu ook werken aan een standaard om de AI modellen zelf te metadateren. </li>
+<li>Integrity, provenance and trust oftewel integriteit, herleidbaarheid en vertrouwen. Dit is een belangrijk thema dit jaar bij OGC. Duidelijk is al dat voor Provenance de W3C PROV-o standard (en dan vooral de ontologie) de grote gemene deler is. Geonovum werkt in het project Logboek dataverwerkingen ook met een mapping naar deze standaard.</li>
+</ul>
+<p>En verder:</p>
+<ul>
+<li>OGC werkt aan een aantal ontologieën (dwz kennismodellen, in RDF uitgedrukt): CityRDF, GeoDCAT, SOSA/SSN, GeoSPARQL, een CRS ontologie, en mogelijk ook aan een Records ontologie die OGC API Records, GeoDCAT en STAC aan elkaar gaat verbinden. Deels komt dit werk uit Europese projecten. De aandacht verschuift momenteel naar <em>harmonisatie tussen</em> zulke ontologieën. Vanuit het OGC wordt betoogd om zulke mappings als <em>first class citizens</em> te behandelen: maak ze FAIR, publiceer ze, beheer ze etc. Dit resoneert met het idee van Governance op het snijvlak vanuit DiSGeo, een <a href="https://docs.crow.nl/ontology-alignment/whitepaper/">paper van CROW</a> over dit onderwerp, mappings die in IMX een belangrijke rol spelen, en activiteit rond hergebruik van elkaars begrippen binnen de NL-SBB community.</li>
+<li>OGC werkt daarnaast aan het automatisch genereren van ontologieën. Deels omdat er vraag naar zulke ontologieën is, niet zozeer in de geo wereld zelf maar wel bv binnen Symbolic AI en in aanpalende domeinen; en deels omdat je een informatiemodel dat in RDF is uitgedrukt beter kunt beheren, waarbij veel te automatiseren is: je kunt regels uitdrukken en valideren, voorbeelden genereren en valideren, profielen uitdrukken, afhankelijkheden tussen standaarden uitdrukken, mappings maken etc. OGC heeft een knowledge graph waar al hun standaarden in beschreven staan.</li>
+<li>OGC heeft ook gedachtengoed over samenhang van metadata. De idee leeft dat je APIs zou moeten verbinden aan schema's, en de schema's verbinden aan bijbehorende semantiek. Het OGC wil dit ook gaan realiseren in hun standaardendocumentatie. In feite een feature type catalog. Hoe bouw je die op, op een technisch neutrale manier. En in het verlengde daarvan: hoe hangen OGC API Records, GeoDCAT, STAC en informatiemodel etc met elkaar samen. </li>
+<li>Vanuit Nederlandse OGC leden is aangegeven dat er behoefte is aan standaarden voor point clouds. Bij OGC ligt al een voorstel ter goedkeuring om LAZ te standaardiseren, echter zou dan COPC ook een goede kandidaat zijn voor standaardisatie; verder is er behoefte aan een standaard voor panoramabeelden en oblique beelden.</li>
+</ul>
+<p>Ook interessant en wel strategisch vanuit OGC is dat ze hun ledenaantal in Afrika en Zuid-Amerika actief aan het uitbouwen zijn. Tot nu toe was het vooral Noord-Amerika, Europa en Azië; waarbij de deelname vanuit Noord-Amerika momenteel wat af lijkt te zwakken.</p>
+<p>Op strategisch niveau is het daarnaast belangrijk om op te merken dat het OGC uitgaat van algemene IT standaarden. Uitgangspunt is om bestaande IT standaarden over te nemen, aangevuld met eventueel een best practice, profiel en/of extensie vanuit OGC; en alleen vanuit OGC iets nieuws te maken als er nog geen generieke standaard is. Dit principe is mede ontstaan vanuit de Spatial Data on the Web best practices die OGC samen met W3C heeft geschreven (gepubliceerd in 2016). Het principe is bijvoorbeeld toegepast bij de OGC API standaarden die gebaseerd zijn op HTTP en REST, maar ook bij GeoPackage (gebaseerd op SQLLite) en de al genoemde cloudnative geostandaarden. Het is een belangrijk punt omdat de moderne generatie OGC standaarden daardoor ook goed passen in algemene digitale architecturen. </p>
+<p>OGC probeert ook een vinger aan de pols te houden bij Europese dataspace ontwikkelingen, maar geeft aan dat dit niet eenvoudig is. Het gaat om een grote hoeveelheid projecten waar dingen gebeuren. De meeste dataspaces hebben een raakvlak met geo-informatie. OGC probeert IDSA te bewegen OGC standaarden en methoden te gebruiken (profiles, extensions, how to use building blocks etc). Het idee van een location data space is niet handig in de visie van OGC, want grote kans dat dit genegeerd zal worden. Het is zaak om geospatial te injecteren in dataspaces, niet een geo dataspace ernaast te ontwikkelen.</p>
+</section>
+  <section id="world-wide-web-consortium-w3c"><div class="header-wrapper"><h2 id="x5-world-wide-web-consortium-w3c"><bdi class="secno">5. </bdi>World Wide Web Consortium (W3C)</h2><a class="self-link" href="#world-wide-web-consortium-w3c" aria-label="Permalink for Section 5."></a></div>
+<p>Het W3C ontwikkelt de standaarden voor het web zoals het OGC dat doet voor geo. Het internet is een prachtig instrument om digitale informatie op te delen en het Web is in feite ene wereldwijd, op standaarden gebaseerd open platform. Die kracht van het web willen we ook graag benutten om geo-informatie beter toegankelijk te maken. Andersom is "locatie" vaak een verbindend element voor verschillende datasets. En dat maakt "geo" zeer interessant voor de webwereld. </p>
+<p>Standaarden van het W3C zijn vaak heel technisch en de toepasbaarheid ervan in de geowereld wordt vaak pas na enige tijd duidelijk. </p>
+<p>Mogelijk relevant: </p>
+<ul>
+<li>standaarden voor webtoegankelijkheid - daar moeten we aan voldoen bij publicatie op het web</li>
+<li>DCAT: wordt momenteel verder doorontwikkeld</li>
+<li>Decentralized Identifiers: kan een rol spelen in datakluizen en dataspaces</li>
+<li>Federated Identity: idem</li>
+<li>Verifiable credentials: idem</li>
+<li>GPU for the Web + web assembly: kan interessant zijn voor grote (3D) geotoepassingen op het web</li>
+<li>Immersive web: AR/VR</li>
+<li>JSON-LD: om semantiek aan geodata in json te koppelen</li>
+<li>RDF-star: om metadata aan gegevens te koppelen (op individueel gegeven niveau), interessant voor bv provenance</li>
+<li>spatial data on the web werkgroep: ontwikkelt SOSA/SSN, CRS ontologie,  en werkt samen met OGC aan GeoDCAT en GeoSPARQL</li>
+<li>web application security, web authentication: interessant voor API Design rules, authenticatie/authorisatie</li>
+<li>web machine learning</li>
+<li>web of things: mogelijk relevant voor sensordata, maar adoptie lijkt vooralsnog laag</li>
+</ul>
+</section>
+  <section id="iso-tc211"><div class="header-wrapper"><h2 id="x6-iso-tc211"><bdi class="secno">6. </bdi>ISO TC211</h2><a class="self-link" href="#iso-tc211" aria-label="Permalink for Section 6."></a></div>
+<p>ISO is de Internationale Standaardisatie Organisatie is een samenwerkingsverband van nationale standaardisatieorganisaties in 170+ landen. ISO is een NGO met de hoofdzetel in Geneve. Financiering van ISO is via bijdragen van de deelnemende landen en via de verkoop van standaarden. Voor deelname en ISO standaarden ontwikkeling en stemmingen op standaarden moet je lid zijn van de bij ISO aangesloten nationale standaardisatie organisatie. Voor Nederland is dat de NEN. De ISO is opgedeeld in meer dan 300 Technische Commissies (TC) die allen een afgebakend standaardisatiedomein hebben. Voorbeeld daarvan zijn Transportcontainers, Gasturbines, Tandheelkunde, Creatief Digitaal Design, Risico beheersing, Geo-informatie/geomatics.</p>
+<p>ISO/TC211 Geo-informatie/geomatics heeft als toepassingsgebied: standaardisatie op het gebied van digitale geografische informatie. Binnen dit toepassinggebied kunnen deze standaarden methoden, hulpmiddelen en diensten voor gegevensbeheer specificeren. Gegevensbeheer omvat het verkrijgen, verwerken, analyseren, openen, presenteren en publiceren van geografische gegevens voor gebruikers en systemen. Belangrijk is de koppeling aan beschikbare standaarden uit de  algemene informatietechnologie.</p>
+<p>TC 211 heeft 100 standaarden gepubliceerd en 30 in ontwikkeling.</p>
+<section id="visie-en-strategie"><div class="header-wrapper"><h3 id="x6-1-visie-en-strategie"><bdi class="secno">6.1 </bdi>Visie en strategie.</h3><a class="self-link" href="#visie-en-strategie" aria-label="Permalink for Section 6.1"></a></div>
+<p>De visie van TC 211 is:
+ISO/TC 211 wil een duurzaam welvarende toekomst ondersteunen door, in samenwerking met
+anderen, een reeks normen te bieden die een beter beheer van geografische informatie mogelijk maken.</p>
+</section><section id="doel-van-geo-standaarden"><div class="header-wrapper"><h3 id="x6-2-doel-van-geo-standaarden"><bdi class="secno">6.2 </bdi>Doel van geo-standaarden.</h3><a class="self-link" href="#doel-van-geo-standaarden" aria-label="Permalink for Section 6.2"></a></div>
+<p>Geografische informatiestandaarden vormen de basis voor het delen van gegevens en interoperabiliteit, en vormen een fundament voor andere domeinen die een digitale representatie van de wereld nodig hebben. Voor zover mogelijk bouwen geo-informatie-standaarden voort op standaarden uit IT en andere domeinen die niet specifiek geografisch van aard zijn. </p>
+<p>Interoperabiliteitsdomeinen voor TC211 zijn:</p>
+<ul>
+<li>data en metadata (semantiek);</li>
+<li>codering (syntaxis), en</li>
+<li>toegang en verwerking (services – op het web bekend als APIs)</li>
+</ul>
+</section><section id="schets-van-ontwikkeling-gebruik-en-rol-van-geo-informatie"><div class="header-wrapper"><h3 id="x6-3-schets-van-ontwikkeling-gebruik-en-rol-van-geo-informatie"><bdi class="secno">6.3 </bdi>Schets van ontwikkeling gebruik en rol van geo-informatie.</h3><a class="self-link" href="#schets-van-ontwikkeling-gebruik-en-rol-van-geo-informatie" aria-label="Permalink for Section 6.3"></a></div>
+<p>Webgebaseerde distributie van geo-informatie blijft zich ontwikkelen, sensoren en burgers zijn continu verbonden en leveren gegevens. Gegevens worden steeds gedetailleerder, actueler en direct toegankelijk. Automatische verwerking van gestandaardiseerde gegevens maakt het mogelijk om meer bruikbare informatie en kennis te verstrekken. Geo-informatie wordt steeds vaker ingebed in andere domeinsystemen, zoals intelligent transport, bouw, stadsbeheer en risicobeheerssystemen. Het concept en operationalisering van 'digitale tweeling' wordt meer en meer toegepast om digitale kopieën op bijvoorbeeld stedelijk niveau van infrastructuur-, transport- en stadsbeheermodellen verrijkt met live of bijna live sensor- en crowdsource gegevens. Door standaarden te gebruiken worden deze informatiestromen geïntegreerd.</p>
+<p>De toekomstige richting zal gaan richting toepassen van algoritmen, AI en deep learning-systemen om het operationele beheer van slimme steden en andere dynamische omgevingen met veel ruimtelijke gegevens te ondersteunen. Geo-informatie-standaardisatie maakt een ruimtelijke basis (locatie) mogelijk waarop geïntegreerde kennissystemen kunnen worden ontwikkeld. In alle gevallen wordt het delen van gegevens vrijwel uitsluitend via het web uitgevoerd. Gegevens met ruimtelijke informatie worden gemaakt en gepubliceerd door personen of organisaties met weinig of geen achtergrond in geo-informatie. Het is daarom belangrijk dat ISO/TC 211 voortbouwt op bestaande standaarden voor IT, ethiek, privacy, bruikbaarheid en andere domeinen.</p>
+<p>Externe trends maken dat ISO/TC 211 de volgende richtingen in standaardisatie nastreeft:</p>
+<ul>
+<li>streven naar standaarden die gemakkelijker te implementeren zijn, bijvoorbeeld eenvoudigere datamodellen, modulaire standaarden met een eenvoudige kern en optionele uitbreidingen;</li>
+<li>nieuwe en opkomende metadatastandaarden overwegen die eenvoudigere datamodellen hebben;</li>
+<li>duidelijker gebruik maken van huidige IT-standaarden en -benaderingen, zoals OpenAPI, gegevens in JSON-formaat en semantische context met behulp van bijvoorbeeld JSON-LD.</li>
+</ul>
+</section><section id="iso-tc211-visie-op-geo-standaarden-en-eu-data-spaces"><div class="header-wrapper"><h3 id="x6-4-iso-tc211-visie-op-geo-standaarden-en-eu-data-spaces"><bdi class="secno">6.4 </bdi>ISO/TC211 visie op geo-standaarden en EU Data Spaces.</h3><a class="self-link" href="#iso-tc211-visie-op-geo-standaarden-en-eu-data-spaces" aria-label="Permalink for Section 6.4"></a></div>
+<p>In het rapport <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https:/committee.iso.org/files/live/users/fh/aj/aj/tc211contributor%40iso.org/files/EU/ISO-TC211_N5971.pdf">ISO/TC211 report from AHG Input to EU Data Spaces</a> geeft ISO/TC 211 haar visie op de ruimtelijke dimensie in de EU Data Spaces en de geo-informatiestandaarden, architecturen en software componenten die deze standaarden gebruiken. Doel van dat document is om het belang van de ruimtelijke component en gerelateerde standaarden te onderschrijven en onder de aandacht van het EU programma te brengen.
+De opkomst van nieuwe gegevensbronnen zoals internet of things, web API standaarden en, in het algemeen, nieuwe architecturen zoals cloud/edge, nieuwe software componenten en geavanceerde technologieën algoritmen en kunstmatige intelligentie hebben de context waarin interoperabele gegevensuitwisseling plaatsvindt, drastisch veranderd.
+Zowel OGC als ISO/TC 211 spelen een cruciale rol in het geo-standaardisatie domein. Ze bieden uitgebreide sets standaarden die interoperabiliteit ondersteunen en een breed scala aan ruimtelijke data (space) toepassingen en diensten mogelijk maken.</p>
+<p>ISO/TC211 en OGC standaarden en INSPIRE zullen een belangrijke rol spelen in de ontwikkeling van Data Spaces. ISO-standaarden bieden een wereldwijd coherent raamwerk voor het delen van data, terwijl INSPIRE een implementatiekader biedt voor ruimtelijk databeheer als infrastructuur in Europa. Het Open Geospatial Consortium (OGC) biedt een reeks API's die klaar zijn om te worden gebruikt om services voor Data Spaces te bouwen en te implementeren. OGC API's zijn ontworpen om interoperabel en gestandaardiseerd te zijn, wat ze zeer geschikt maakt voor de ontwikkeling van Data Spaces die data kunnen delen over verschillende platforms en applicaties. Deze standaarden bieden een raamwerk en aanbevelingen voor een interoperabel geo-datalandschap dat de ontwikkeling van Data Spaces kan ondersteunen.</p>
+<p><strong>High-Value Datasets.</strong></p>
+<p>De EU-Open Data Directive identificeert een aantal zogenaamde High Value Datasets. De categorieën HVD's omvatten o.a. locatie basisgegevens, aardobservatie en milieu, meteorologische, statistieken, bedrijven en bedrijfseigendom, en mobiliteitsgegevens. De belangrijkste technische vereisten voor HVD's zijn:</p>
+<ul>
+<li>Machine leesbare formaten: HVD's moeten worden geleverd in formaten die machineleesbaar en goed gedocumenteerd zijn. </li>
+<li>Gestandaardiseerde gegevensstructuren: De gegevens moeten voldoen aan gemeenschappelijke normen en structuren om consistentie en interoperabiliteit tussen verschillende systemen en toepassingen te waarborgen.</li>
+<li>Beschikbaarheid via API's: HVD's moeten toegankelijk zijn via Application Programming Interfaces (API's), die directe en efficiënte toegang tot de gegevens mogelijk maken.</li>
+<li>Open licenties: De gegevens moeten worden verstrekt onder de CC BY 4.0-licentie (of minder beperkend) die hergebruik en herdistributie toestaat.</li>
+<li>Vrije toegang: In overeenstemming met de richtlijn moeten deze datasets gratis beschikbaar zijn om de toegankelijkheid en het gebruik ervan te maximaliseren.</li>
+<li>Gegevensbeveiliging en privacy: Naleving van de regelgeving inzake gegevensbescherming, met name voor datasets die gevoelige of persoonlijke informatie kunnen bevatten.</li>
+</ul>
+<p>Het volgende figuur geeft de technische bouwblokken weer waarop een data space gebaseerd is. Daarop geprojecteerd de relevantie voor ISO/TC211, OGC en Inspire.</p>
+<figure id="dataspaceBuildingBlocks">
+    <img src="media/Dataspace_buildingblocks.jpg" alt="">
+    <figcaption><a class="self-link" href="#dataspaceBuildingBlocks">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Technische bouwblokken van een data space en relevantie voor geo-standaarden</span></figcaption>
+</figure>
+
+<p>Bron: <a href="https://dssc.eu/space/BBE/178422228/Technical+Building+Blocks">Data Space Support Center</a> en <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https:/committee.iso.org/files/live/users/fh/aj/aj/tc211contributor%40iso.org/files/EU/ISO-TC211_N5971.pdf">ISO/TC211 report from AHG Input to EU Data Spaces</a></p>
+<p>In het genoemde rapport wordt gedetailleerd ingegaan op de verschillende bouwblokken en hoe geo-standaarden daar een rol in spelen.</p>
 </section></section>
-  <section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 3."></a></div>
-<figure id="Mermaidvoorbeeld">
-
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
-#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead17)" style="fill:none"></path><defs><marker id="arrowhead17" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-11" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-13" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
-<figcaption><a class="self-link" href="#Mermaidvoorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
-</figure></section>
 
   
   
   
 
   
-  <section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
-  <section id="tof"><div class="header-wrapper"><h2 id="x5-lijst-met-figuren"><bdi class="secno">5. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 5."></a></div><ul class="tof">
+  
+  <section id="tof"><div class="header-wrapper"><h2 id="x7-lijst-met-figuren"><bdi class="secno">7. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 7."></a></div><ul class="tof">
         <li class="tofline">
-    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Onderschrift</span></a>
-  </li><li class="tofline">
-    <a class="tocxref" href="#Mermaidvoorbeeld"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
+    <a class="tocxref" href="#dataspaceBuildingBlocks"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Technische bouwblokken van een data space en relevantie voor geo-standaarden</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
     <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
     <ul class="index">
-    <li>
-      <a class="index-term" href="#dfn-definitie">Definitie</a> 
-    <span class="print-only">§2.1</span></li>
+    
   </ul>
   </section><section id="index-defined-elsewhere">
     <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
@@ -453,26 +1581,9 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 
 
-<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
-    <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
-    <dl class="bibliography"><dt id="bib-semver">[SemVer]</dt><dd>
-      <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
-    </dd></dl>
-  </section></section><p role="navigation" id="back-to-top">
+<p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
-         
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-      <a href="#ref-for-dfn-definitie-1" title="§ 2.3 Referenties">§ 2.3 Referenties</a> 
-    </li>
-  </ul>
-    </div><script id="respec-dfn-panel">(() => {
+  </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
   document.respec.ready.then(setupPanel);
@@ -694,4 +1805,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Geonovum Handreiking - Werkversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">Geonovum Algemeen - Werkversie</div><script src="https://gitdocumentatie.logius.nl/publicatie/respec/fixup.js"></script></body></html>
