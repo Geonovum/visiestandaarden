@@ -2,6 +2,8 @@
 
 Het W3C ontwikkelt de standaarden voor het web zoals het OGC dat doet voor geo. Het internet is een prachtig instrument om digitale informatie op te delen en het Web is in feite ene wereldwijd, op standaarden gebaseerd open platform. Die kracht van het web willen we ook graag benutten om geo-informatie beter toegankelijk te maken. Andersom is "locatie" vaak een verbindend element voor verschillende datasets. En dat maakt "geo" zeer interessant voor de webwereld. 
 
+Het W3C heeft onlangs een nieuwe [visie](https://www.w3.org/blog/2025/vision-for-w3c-a-manifesto-for-our-operations-and-decision-making/) gepubliceerd.
+
 Standaarden van het W3C zijn vaak heel technisch en de toepasbaarheid ervan in de geowereld wordt vaak pas na enige tijd duidelijk. 
 
 Mogelijk relevant: 
