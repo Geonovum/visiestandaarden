@@ -11,14 +11,14 @@ Verder wordt er geld beschikbaar gesteld om de benodigde infrastructuur, o.a. ge
 
 De Europese Data Strategie bevat veel elementen die rechtstreeks voor datahouders in publiek relevante domeinen van belang zijn.
 
-##De Data Governance act
+## De Data Governance act
 
 De Data Governance act regelt het hergebruik van overheidsdata die niet onder de Open Data Directive valt.  Daarvoor worden voorwaarden gesteld aan datadeeldiensten en daar wordt toezicht op uitgeoefend. Dit betreft overheidsgegevens waarop commerciële of statistische vertrouwelijkheid rust, persoonsgegevens die niet binnen de Open Data Richtlijn vallen, en gegevens waarvoor intellectueel eigendom van derden van toepassing is.
 Voorwaarden die veilig gebruik en eerlijke toegang regelen zijn van toepassing. Het is mogelijk om kosten in rekening te brengen voor hergebruik, maar daaraan zijn voorwaarden t.a.v. transparantie en uitlegbaarheid verbonden. Lidstaten dienen een of meer bevoegde organisaties aan te wijzen die de overheidsdatahouders ondersteunt t.a.v. techniek, verantwoord datagebruik, en het verwerken van aanvragen voor gebruik. Zie voor verdere uitleg <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#data-governance-act-dga" target="_blank">Data Governance Act </a>
 
 De European Data Innovation Board (EDIB) adviseert over de werkwijzen in het kader van deze wet, standaarden, en interoperabiliteit (zie ook de Data Act), en let op de internationale samenwerking tussen nationaal aangewezen bevoegde organisaties. De EDIB is samengesteld uit vertegenwoordigers van de Lidstaten, een aantal andere (Europese) overheidsentiteiten en een groep experts. 
 
-##Data Act
+## Data Act
 
 De Data Act is bedoeld om meer data, in handen van bedrijven of gegenereerd door producten of diensten, onder eerlijke en uniforme regels beschikbaar te krijgen voor (her)gebruik. 
 
@@ -26,13 +26,13 @@ De Data Act geeft een reeks essentiële vereisten om interoperabiliteit mogelijk
 Zie voor verdere uitleg <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#data-act-da" target="_blank">Data Act</a>
 
 
-##Open Data Directive
+## Open Data Directive
 
 De Open Data Directive formuleert hoe overheden open data beschikbaar moeten stellen (zowel na een aanvraag als bij pro-actieve publicatie). Beschikbaar te stellen data moet waar mogelijk digitaal in open en machine-leesbare formaten samen met hun metadata toegankelijk, vindbaar en herbruikbaar worden gemaakt. In voorkomende gevallen volstaan ook bestaande formaten (as-is). De Open Data Directive geeft de EC de mogelijkheid met een Uitvoeringsverordening open data verplichtingen op te leggen aan alle Lidstaten tegelijkertijd (dus zonder omzetting in nationale wetgeving). Zo'n uitvoeringsverordening vermeldt hoe en onder welke voorwaarden de verplichte open data moet worden gepubliceerd, en verstrekt. De EU High Value Data is zo'n uitvoeringsverordening. De uitvoeringsverordening bepaalt in haar bijlage (Annex I) welke overheidsdata verplicht als open data moet worden gepubliceerd. Voor die datasets bepaalt de wet de eisen die worden gesteld aan publicatie en gebruik van die datasets, waaronder de minimumvereisten aan ontsluiting via een API. Het staat landen vrij verder te gaan dan de implementatiewet voorschrijf, en t.a.v. de hoeveelheid data worden landen daartoe ook expliciet aangemoedigd. Unie of nationale wettelijke vereisten die verder gaan blijven onverminderd van kracht.
 Zie voor verdere uitleg <a href="https://docs.geostandaarden.nl/eu/handreiking-EU-informatie/#open-data-directive" target="_blank">Open data directive</a>
 
 
-##Standaardisatie
+## Standaardisatie
 
 De Data Governance en Data verordeningen bevatten stukken die normalisatie vergen of expliciet om standaarden vragen.
 De EC heeft een concept standaardisatie verzoek neergelegd bij CEN-CENELEC m.b.t. data spaces, data governance  en cloud en edge. Dit is vooral een accent op de Data verordening maar ook de implementatie van de Data Governance verordening wordt met dit verzoek ondersteund. Verschillende elementen komen hierin samen / worden geadresseerd:
@@ -42,6 +42,3 @@ De EC heeft een concept standaardisatie verzoek neergelegd bij CEN-CENELEC m.b.t
 - Artikel 35, interoperabiliteit voor dataverwerkingsdiensten
 - Artikel 36, eisen m.b.t. slimme contracten voor het uitvoeren van gegevensdelingsovereenkomsten.
   
-
-
-

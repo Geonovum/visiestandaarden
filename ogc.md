@@ -1,4 +1,5 @@
 # Open Geospatial Consortium
+
 Het Open Geospatial Consortium (OGC) is een internationale non-profit organisatie die is opgericht om interoperabiliteit voor geografische gegevensverwerking te bevorderen, door ontwikkeling van open en uitbreidbare standaarden voor interfaces en data uitwisseling voor GIS en andere technologieën. Leden (ruim 400) van het OGC zijn zowel overheidsinstellingen als de industrie en onderwijsinstellingen. Het OGC ontwikkelt specificaties die bij voldoende volwassenheid worden aangeboden aan ISO/TC 211. OGC ontwikkelt deze specificaties door veelvuldig gebruik te maken van jaarlijkse grote testbeds. OGC ontwikkelt vooral technische implementatie standaarden gerelateerd aan services.
 
 Het OGC bestaat al meer dan 30 jaar en heeft belangrijke basisstandaarden geleverd voor de NGII en INSPIRE. 
